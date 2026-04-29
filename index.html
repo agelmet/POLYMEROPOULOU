@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <title>Ψυχολόγος Ψυχικό | Λαμπρινή Πολυμεροπούλου | Συστημική Ψυχοθεραπεία</title>
+    <meta name="description" content="Συστημική Ψυχοθεραπεία στο Ψυχικό με τη Λαμπρινή Πολυμεροπούλου (MSc). Εξειδίκευση σε άγχος, κατάθλιψη & ΛΟΑΤΚΙ+ υποστήριξη. Κλείστε ραντεβού: 693 157 5157.">
+    <meta name="keywords" content="Ψυχολόγος Ψυχικό, Συστημική Ψυχοθεραπεία, Λαμπρινή Πολυμεροπούλου, άγχος, κατάθλιψη, LGBTQ+ φιλικός ψυχολόγος, burnout, ψυχοθεραπεία εφήβων">
+    <meta name="author" content="Advon Media">
+    <meta property="og:title" content="Ψυχολόγος Ψυχικό | Λαμπρινή Πολυμεροπούλου">
+    <meta property="og:description" content="Ένα ασφαλές καταφύγιο για την προσωπική σας ανάπτυξη. Συστημική ψυχοθεραπεία ενηλίκων και εφήβων.">
+    <meta property="og:image" content="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/69955318bf62aa38a873f83e.png">
+    
+    <link rel="icon" href="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6991fd5065ad36da3ebd4c88.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F0EAD2',
+                        mustard: '#E5A823',
+                        olive: '#7D8639',
+                        rust: '#B33A26',
+                        navy: '#08203E',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Manrope"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://lh3.googleusercontent.com/p/AF1QipPWHqWJ3BCkFAyDIkv8Zhn4x6DikwJnH3JVXNAU=s1360-w1360-h1020')",
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(8, 32, 62, 0.1)',
+                        'gold': '0 10px 30px -5px rgba(229, 168, 35, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Base styles */
+        body {
+            background-color: #F0EAD2;
+            color: #08203E;
+            overflow-x: hidden;
+        }
+
+        /* Greek Caps No Accents Helper */
+        .greek-caps {
+            text-transform: uppercase;
+        }
+
+        /* Scroll Animation Utility */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hero Image Masking */
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite;
+        }
+
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+
+        /* Text Selection */
+        ::selection {
+            background: #E5A823;
+            color: #fff;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F0EAD2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #08203E;
+            border-radius: 4px;
+        }
+
+        /* Carousel Snap */
+        .snap-x-mandatory {
+            scroll-snap-type: x mandatory;
+        }
+        .snap-center {
+            scroll-snap-align: center;
+        }
+        
+        /* Lightbox transitions */
+        .lightbox-open {
+            overflow: hidden;
+        }
+
+        /* Mobile Menu Safe Area */
+        .safe-top-padding {
+            padding-top: max(20px, env(safe-area-inset-top));
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased font-sans selection:bg-mustard selection:text-white">
+
+    <div id="loader" class="fixed inset-0 z-[60] bg-navy flex items-center justify-center transition-opacity duration-700">
+        <div class="text-cream font-serif text-2xl animate-pulse">Λ.Π.</div>
+    </div>
+
+    <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-4 px-4 sm:px-6 lg:px-12 border-b border-transparent">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="group relative z-50 flex items-center gap-3">
+                <div class="relative w-12 h-12 overflow-hidden rounded-full border-2 border-mustard shadow-sm flex-shrink-0">
+                     <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/69955318bf62aa38a873f83e.png" 
+                          alt="Λαμπρινή Πολυμεροπούλου" 
+                          class="w-full h-full object-cover object-top">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <span class="font-serif text-navy font-bold text-sm leading-tight group-hover:text-rust transition-colors">Λαμπρινή Πολυμεροπούλου <span class="text-xs font-sans font-normal text-olive">(MSc)</span></span>
+                    <span class="text-[0.6rem] text-navy/70 tracking-wider uppercase font-sans mt-0.5 max-w-[200px] leading-tight">ΨΥΧΟΛΟΓΟΣ - ΣΥΣΤΗΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 text-navy font-medium text-sm tracking-wide">
+                <a href="#about" class="hover:text-rust transition-colors uppercase">Η ΨΥΧΟΛΟΓΟΣ</a>
+                <a href="#services" class="hover:text-rust transition-colors uppercase">ΥΠΗΡΕΣΙΕΣ</a>
+                <a href="#space" class="hover:text-rust transition-colors uppercase">Ο ΧΩΡΟΣ</a>
+                <a href="#reviews" class="hover:text-rust transition-colors uppercase">ΑΞΙΟΛΟΓΗΣΕΙΣ</a>
+                <a href="#contact" class="px-6 py-2 bg-mustard text-white rounded-full hover:bg-rust transition-all shadow-gold transform hover:-translate-y-1">
+                    <span class="greek-caps">ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ</span>
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="lg:hidden z-50 text-navy hover:text-rust transition-colors p-1">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-cream/95 backdrop-blur-xl z-[100] transform translate-x-full transition-transform duration-500 flex flex-col safe-top-padding">
+            
+            <div class="w-full flex justify-end px-6 pb-4">
+                <button id="mobile-menu-close" class="text-navy hover:text-rust transition-colors p-2 mt-2">
+                    <i data-lucide="x" class="w-10 h-10"></i>
+                </button>
+            </div>
+
+            <div class="flex-1 flex flex-col items-center justify-center gap-8 pb-20 px-6 text-center">
+                <a href="#about" class="text-3xl font-serif text-navy hover:text-rust mobile-link">Η Ψυχολόγος</a>
+                <a href="#services" class="text-3xl font-serif text-navy hover:text-rust mobile-link">Υπηρεσίες</a>
+                <a href="#space" class="text-3xl font-serif text-navy hover:text-rust mobile-link">Ο Χώρος</a>
+                <a href="#reviews" class="text-3xl font-serif text-navy hover:text-rust mobile-link">Αξιολογήσεις</a>
+                <a href="#contact" class="px-8 py-4 bg-mustard text-white text-xl rounded-full shadow-lg mobile-link w-full max-w-xs mt-4">Κλείστε Ραντεβού</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPWHqWJ3BCkFAyDIkv8Zhn4x6DikwJnH3JVXNAU=s1360-w1360-h1020" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]" alt="Psychology Office Background">
+            <div class="absolute inset-0 bg-gradient-to-r from-cream/90 via-cream/70 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 reveal">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-olive/10 rounded-full text-olive text-xs font-bold tracking-widest uppercase">
+                    <span class="w-2 h-2 rounded-full bg-olive animate-pulse"></span>
+                    Ψυχολόγος Νέο Ψυχικό
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-serif text-navy leading-tight">
+                    Συστημική <span class="italic text-rust">Ψυχοθεραπεία</span> <br> με Σεβασμό στη <br> Μοναδικότητα
+                </h1>
+                <p class="text-navy/80 text-lg leading-relaxed max-w-lg">
+                    Ένα ασφαλές καταφύγιο για την προσωπική σας ανάπτυξη. Ανακαλύψτε τη φωνή σας και χτίστε μια ζωή με νόημα μέσα από μια συμπεριληπτική και ολιστική προσέγγιση.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 bg-navy text-white rounded-full hover:bg-rust transition-colors shadow-lg text-center font-bold tracking-wide group flex items-center justify-center gap-2">
+                        <span>ΕΠΙΚΟΙΝΩΝΙΑ</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#about" class="px-8 py-4 border border-navy/30 text-navy rounded-full hover:bg-navy hover:text-white transition-all text-center font-bold tracking-wide">
+                        ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center lg:justify-end reveal delay-200">
+                <div class="relative w-80 h-96 lg:w-[450px] lg:h-[550px]">
+                    <div class="absolute -top-4 -left-4 w-full h-full border-2 border-mustard rounded-[2rem] z-0"></div>
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-olive/20 rounded-full blur-xl z-0"></div>
+                    
+                    <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/69955318bf62aa38a873f83e.png" 
+                         alt="Λαμπρινή Πολυμεροπούλου" 
+                         class="w-full h-full object-cover rounded-[2rem] shadow-2xl relative z-10 organic-shape">
+                    
+                    <div class="absolute bottom-10 -left-6 z-20 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border-l-4 border-mustard max-w-[200px]">
+                        <p class="text-xs font-bold text-navy uppercase tracking-wider mb-1">ΕΙΔΙΚΕΥΣΗ</p>
+                        <p class="text-sm text-navy/80 font-serif italic">Συνθετικό Μοντέλο Συστημικής Ψυχοθεραπείας</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-navy/50">
+            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-cream/30 skew-x-12 transform origin-top"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-5 reveal">
+                    <div class="relative sticky top-24">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/69958308905d47b337939508.png" 
+                             alt="Psychologist Portrait" 
+                             class="w-full aspect-[3/4] object-cover rounded-lg shadow-soft grayscale hover:grayscale-0 transition-all duration-700">
+                        <div class="mt-6">
+                            <h3 class="font-serif text-2xl text-navy">Λαμπρινή Πολυμεροπούλου <span class="text-sm font-sans text-olive font-bold ml-2">(MSc)</span></h3>
+                            <p class="text-rust text-sm font-bold tracking-widest mt-1 greek-caps">ΨΥΧΟΛΟΓΟΣ - ΣΥΣΤΗΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-8 reveal delay-100">
+                    <h2 class="text-4xl lg:text-5xl font-serif text-navy leading-tight">
+                        Καλώς ήρθατε. <br>Εδώ, κάθε ιστορία <span class="text-mustard">εισακούγεται</span>.
+                    </h2>
+                    
+                    <div class="prose prose-lg text-navy/70 space-y-6 font-light">
+                        <p>
+                            Είμαι η Λαμπρινή Πολυμεροπούλου (MSc), Ψυχολόγος, απόφοιτος του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών (ΕΚΠΑ), με εξειδίκευση στη Συστημική Ψυχοθεραπεία. Διατηρώ ιδιωτικό γραφείο στο Νέο Ψυχικό.
+                        </p>
+                        <p>
+                            Η κλινική μου εμπειρία είναι βαθιά και ουσιαστική, καθώς εργάζομαι στη Μονάδα Εφηβικής Υγείας του Γ.Ν. Παίδων «Π. & Α. Κυριακού». Εκεί, συμμετέχω σε διεπιστημονικές ομάδες, υποστηρίζοντας εφήβους και γονείς σε κρίσιμες αναπτυξιακές φάσεις. Παράλληλα, έχω εργαστεί σε Κέντρα Αποκατάστασης, αποκτώντας πολύτιμη τριβή με νευρολογικές παθήσεις και ψυχοπαιδαγωγικές παρεμβάσεις.
+                        </p>
+                        <p>
+                            Η προσέγγισή μου είναι συμπεριληπτική και ολιστική. Εργάζομαι με ενήλικες, εφήβους και άτομα της ΛΟΑΤΚΙ+ κοινότητας, εστιάζοντας όχι μόνο στο σύμπτωμα, αλλά στο σύστημα των σχέσεων και των εμπειριών που το συντηρούν. Με ενσυναίσθηση και ενεργητική ακρόαση, σας βοηθώ να βρείτε τη φωνή σας, να ενισχύσετε τη διεκδικητικότητά σας και να χτίσετε μια ζωή με νόημα.
+                        </p>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6 mt-12">
+                        <div class="p-6 bg-cream rounded-xl border border-transparent hover:border-olive transition-all group">
+                            <div class="w-12 h-12 bg-olive text-white rounded-lg flex items-center justify-center mb-4 group-hover:bg-navy transition-colors">
+                                <i data-lucide="hospital" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-serif text-xl text-navy mb-2">Κλινική Εμπειρία Αιχμής</h4>
+                            <p class="text-sm text-navy/70 leading-relaxed">
+                                Η εμπειρία μου βασίζεται στη τριβή με τις πραγματικές ανάγκες σε απαιτητικά πλαίσια και στόχος μου είναι η δημιουργία ενός ασφαλούς και υποστηρικτικού πλαισίου, όπου κάθε άνθρωπος μπορεί να εκφραστεί ελεύθερα, να κατανοήσει βαθύτερα τον εαυτό του και να αναπτύξει λειτουργικούς τρόπους διαχείρισης των δυσκολιών του.
+                            </p>
+                        </div>
+                        
+                        <div class="p-6 bg-cream rounded-xl border border-transparent hover:border-olive transition-all group">
+                            <div class="w-12 h-12 bg-olive text-white rounded-lg flex items-center justify-center mb-4 group-hover:bg-navy transition-colors">
+                                <i data-lucide="network" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-serif text-xl text-navy mb-2">Συστημική Σκέψη</h4>
+                            <p class="text-sm text-navy/70 leading-relaxed">
+                                Δεν βλέπω «προβληματικούς ανθρώπους», αλλά άτομα μέσα σε συστήματα. Συνδέω τις τελείες μεταξύ του ατόμου και του περιβάλλοντός του.
+                            </p>
+                        </div>
+
+                        <div class="p-6 bg-cream rounded-xl border border-transparent hover:border-olive transition-all group">
+                            <div class="w-12 h-12 bg-olive text-white rounded-lg flex items-center justify-center mb-4 group-hover:bg-navy transition-colors">
+                                <i data-lucide="rainbow" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-serif text-xl text-navy mb-2">Ενεργή Συμπερίληψη</h4>
+                            <p class="text-sm text-navy/70 leading-relaxed">
+                                Ένας χώρος απαλλαγμένος από κριτική. Safe space για ΛΟΑΤΚΙ+ άτομα και νευρολογικές ιδιαιτερότητες.
+                            </p>
+                        </div>
+
+                        <div class="p-6 bg-cream rounded-xl border border-transparent hover:border-olive transition-all group">
+                            <div class="w-12 h-12 bg-olive text-white rounded-lg flex items-center justify-center mb-4 group-hover:bg-navy transition-colors">
+                                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="font-serif text-xl text-navy mb-2">Ακαδημαική Εγκυρότητα</h4>
+                            <p class="text-sm text-navy/70 leading-relaxed">
+                                Απόφοιτη ΕΚΠΑ με MSc στη Δημόσια Υγεία. Η πρακτική μου βασίζεται σε στέρεα επιστημονικά θεμέλια και όχι σε εμπειρικές μεθόδους.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-olive text-cream relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <span class="text-mustard tracking-[0.2em] text-sm font-bold greek-caps">ΘΕΡΑΠΕΥΤΙΚΗ ΠΡΟΣΕΓΓΙΣΗ</span>
+                <h2 class="text-4xl lg:text-5xl font-serif mt-4 text-cream">Υπηρεσίες Ψυχικής Υγείας</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-cream/5 backdrop-blur-sm border border-cream/10 p-8 rounded-2xl hover:bg-cream/10 transition-all duration-300 transform hover:-translate-y-2 reveal delay-100">
+                    <div class="w-14 h-14 bg-mustard rounded-full flex items-center justify-center mb-6 text-navy shadow-lg">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4 text-mustard">Συστημική Ψυχοθεραπεία Ενηλίκων</h3>
+                    <p class="text-cream/80 text-sm mb-4 font-light">
+                        Περιλαμβάνει: Συστημική ψυχοθεραπεία, Απλή συνεδρία, Αντιμετώπιση θλίψης και burnout.
+                    </p>
+                    <p class="text-cream/70 text-sm leading-relaxed">
+                        Η Συστημική προσέγγιση βλέπει τον άνθρωπο ως μέρος ενός συνόλου (οικογένεια, εργασία). Εξερευνούμε πώς οι σχέσεις επηρεάζουν τη ψυχική σας υγεία. Στόχος η ενίσχυση της διεκδικητικότητας και η οριοθέτηση.
+                    </p>
+                </article>
+
+                <article class="bg-cream/5 backdrop-blur-sm border border-cream/10 p-8 rounded-2xl hover:bg-cream/10 transition-all duration-300 transform hover:-translate-y-2 reveal delay-200">
+                    <div class="w-14 h-14 bg-mustard rounded-full flex items-center justify-center mb-6 text-navy shadow-lg">
+                        <i data-lucide="brain-circuit" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4 text-mustard">Διαχείριση Άγχους & Ιδεοψυχαναγκασμών</h3>
+                    <p class="text-cream/80 text-sm mb-4 font-light">
+                        Περιλαμβάνει: Αντιμετώπιση φοβιών, OCD.
+                    </p>
+                    <p class="text-cream/70 text-sm leading-relaxed">
+                        Μέσα από εξειδικευμένες παρεμβάσεις, εργαζόμαστε για την κατανόηση του φαύλου κύκλου του άγχους. Βοηθάμε το άτομο να μειώσει τα ψυχοσωματικά συμπτώματα και τις εμμονικές σκέψεις, ανακτώντας τον έλεγχο.
+                    </p>
+                </article>
+
+                <article class="bg-cream/5 backdrop-blur-sm border border-cream/10 p-8 rounded-2xl hover:bg-cream/10 transition-all duration-300 transform hover:-translate-y-2 reveal delay-300">
+                    <div class="w-14 h-14 bg-mustard rounded-full flex items-center justify-center mb-6 text-navy shadow-lg">
+                        <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif mb-4 text-mustard">Εξειδικευμένη Υποστήριξη</h3>
+                    <p class="text-cream/80 text-sm mb-4 font-light">
+                        Περιλαμβάνει: Ψυχοθεραπεία εφήβων, LGBTQI+ , Ομαδική Ψυχοθεραπεία.
+                    </p>
+                    <p class="text-cream/70 text-sm leading-relaxed">
+                        Στήριξη σε ένα πλαίσιο αποδοχής, ασφάλειας και σεβασμού στη μοναδικότητα κάθε ταυτότητας και εμπειρίας. Οργάνωση ομάδων ψυχοθεραπείας που ενισχύουν τη διαπροσωπική σύνδεση, την αλληλοϋποστήριξη και την προσωπική ανάπτυξη μέσα από τη δυναμική της ομάδας.
+                    </p>
+                </article>
+
+                 <article class="md:col-span-2 lg:col-span-3 mt-4 bg-rust/20 border border-rust/30 p-8 rounded-2xl reveal delay-400 flex flex-col md:flex-row gap-6 items-center">
+                    <div class="flex-shrink-0 w-16 h-16 bg-rust rounded-full flex items-center justify-center text-white">
+                        <i data-lucide="globe" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-serif mb-2 text-white">Προσβασιμότητα & Κοινωνική Ευθύνη</h3>
+                        <p class="text-cream/80 leading-relaxed">
+                            Η ψυχική υγεία είναι δικαίωμα. Παρέχονται συνεδρίες με <strong>ειδική τιμολογιακή πολιτική</strong> για φοιτητές, ανέργους και ΑΜΕΑ. Δυνατότητα διαδικτυακών συνεδριών (Online).
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="space" class="py-24 bg-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal">
+                <div>
+                    <span class="text-olive tracking-[0.2em] text-sm font-bold greek-caps">ΤΟ ΓΡΑΦΕΙΟ</span>
+                    <h2 class="text-4xl lg:text-5xl font-serif mt-2 text-navy">Ένας Χώρος Ηρεμίας</h2>
+                </div>
+                <p class="text-navy/60 mt-4 md:mt-0 max-w-sm text-right">
+                    Νικολακοπούλου 20, Ψυχικό. <br>Σχεδιασμένος για να νιώθετε ασφάλεια.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer shadow-soft h-80 reveal delay-100" onclick="openLightbox('https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9bf62aa7b7b73d008.jpg')">
+                    <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9bf62aa7b7b73d008.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Office Space 1">
+                    <div class="absolute inset-0 bg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer shadow-soft h-80 reveal delay-200" onclick="openLightbox('https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9905d47344a84130a.jpg')">
+                    <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9905d47344a84130a.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Office Space 2">
+                    <div class="absolute inset-0 bg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer shadow-soft h-80 reveal delay-300" onclick="openLightbox('https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9d614c93ee0293417.jpg')">
+                    <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9d614c93ee0293417.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Office Space 3">
+                    <div class="absolute inset-0 bg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer shadow-soft h-80 reveal delay-100" onclick="openLightbox('https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9905d47a4cc841309.jpg')">
+                    <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9905d47a4cc841309.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Office Space 4">
+                    <div class="absolute inset-0 bg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer shadow-soft h-80 reveal delay-200" onclick="openLightbox('https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9d614c9096a293416.jpg')">
+                    <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9d614c9096a293416.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Office Space 5">
+                    <div class="absolute inset-0 bg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer shadow-soft h-80 reveal delay-300" onclick="openLightbox('https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9d614c98aa3293418.jpg')">
+                    <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/699552a9d614c98aa3293418.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Office Space 6">
+                    <div class="absolute inset-0 bg-navy/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-navy text-cream overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex items-center gap-4 mb-12 reveal">
+                <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" alt="DoctorAnytime" class="h-8 brightness-0 invert opacity-80">
+                <h2 class="text-3xl lg:text-4xl font-serif">Τι λένε οι θεραπευόμενοι</h2>
+            </div>
+
+            <div class="relative group">
+                <button id="prevBtn" class="absolute -left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-mustard rounded-full flex items-center justify-center text-navy shadow-lg opacity-0 group-hover:opacity-100 transition-opacity disabled:opacity-30">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <button id="nextBtn" class="absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-mustard rounded-full flex items-center justify-center text-navy shadow-lg opacity-0 group-hover:opacity-100 transition-opacity disabled:opacity-30">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+
+                <div id="reviewScroll" class="flex gap-6 overflow-x-auto snap-x-mandatory pb-8 scrollbar-hide" style="scrollbar-width: none;">
+                    
+                    <div class="min-w-[85%] md:min-w-[400px] bg-white/5 border border-white/10 p-8 rounded-2xl snap-center flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex text-mustard">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="text-xs text-cream/50">25 Ιαν 2026</span>
+                            </div>
+                            <p class="text-cream/90 italic mb-6 leading-relaxed">"Η εμπειρία μου με τη Λαμπρινή ήταν πολύ θετική... Μου ενέπνευσε ένα κλίμα εμπιστοσύνης και ασφάλειας. Θα τη σύστηνα ανεπιφύλακτα."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-auto">
+                            <div class="w-10 h-10 bg-rust rounded-full flex items-center justify-center font-bold text-white">Μ</div>
+                            <div>
+                                <p class="font-bold text-sm">Μαρίνα</p>
+                                <p class="text-xs text-cream/50">DoctorAnytime</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[85%] md:min-w-[400px] bg-white/5 border border-white/10 p-8 rounded-2xl snap-center flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex text-mustard">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="text-xs text-cream/50">21 Ιαν 2026</span>
+                            </div>
+                            <p class="text-cream/90 italic mb-6 leading-relaxed">"Η Λαμπρινή προσέγγισε την περίπτωση μου με επαγγελματισμό και φροντίδα. Μαζί της αισθάνομαι εμπιστοσύνη και ασφάλεια."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-auto">
+                            <div class="w-10 h-10 bg-olive rounded-full flex items-center justify-center font-bold text-white">Θ</div>
+                            <div>
+                                <p class="font-bold text-sm">Θεοδώρα</p>
+                                <p class="text-xs text-cream/50">DoctorAnytime</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[85%] md:min-w-[400px] bg-white/5 border border-white/10 p-8 rounded-2xl snap-center flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex text-mustard">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="text-xs text-cream/50">20 Ιαν 2026</span>
+                            </div>
+                            <p class="text-cream/90 italic mb-6 leading-relaxed">"Ευχαριστώ πολύ για όλα μπήκαν όλα σε μια σειρά."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-auto">
+                            <div class="w-10 h-10 bg-navy border border-cream/20 rounded-full flex items-center justify-center font-bold text-white">Σ</div>
+                            <div>
+                                <p class="font-bold text-sm">Σωτήρης</p>
+                                <p class="text-xs text-cream/50">DoctorAnytime</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="min-w-[85%] md:min-w-[400px] bg-white/5 border border-white/10 p-8 rounded-2xl snap-center flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex text-mustard">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                                <span class="text-xs text-cream/50">19 Ιαν 2026</span>
+                            </div>
+                            <p class="text-cream/90 italic mb-6 leading-relaxed">"Η εμπειρία που είχα... ήταν παρά πάνω από θετική. Ένιωσα πραγματικά πως υπάρχει κάποιος που με ακούει, με καταλαβαίνει."</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-auto">
+                            <div class="w-10 h-10 bg-mustard rounded-full flex items-center justify-center font-bold text-white">Ε</div>
+                            <div>
+                                <p class="font-bold text-sm">Ελένη</p>
+                                <p class="text-xs text-cream/50">DoctorAnytime</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                 <a href="https://www.doctoranytime.gr/d/Psychologos/polymeropoulou-lamprini" target="_blank" class="inline-flex items-center gap-2 text-mustard hover:text-white transition-colors text-sm font-bold uppercase tracking-widest">
+                    Διαβάστε περισσότερα στο DoctorAnytime <i data-lucide="external-link" class="w-4 h-4"></i>
+                 </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-navy text-cream pt-24 pb-12 border-t border-cream/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-16 mb-16">
+                
+                <div class="space-y-8">
+                    <div class="flex items-center gap-3">
+                        <div class="relative w-12 h-12 overflow-hidden rounded-full border-2 border-mustard shadow-sm flex-shrink-0">
+                             <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/69955318bf62aa38a873f83e.png" 
+                                  alt="Λαμπρινή Πολυμεροπούλου" 
+                                  class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <span class="font-serif text-cream font-bold text-sm leading-tight">Λαμπρινή Πολυμεροπούλου <span class="text-xs font-sans font-normal text-olive">(MSc)</span></span>
+                            <span class="text-[0.6rem] text-cream/70 tracking-wider uppercase font-sans mt-0.5 leading-tight">ΨΥΧΟΛΟΓΟΣ - ΣΥΣΤΗΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-cream/10 rounded-full flex items-center justify-center flex-shrink-0 text-mustard">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Διεύθυνση</h4>
+                                <p class="text-cream/70">Νικολακοπούλου 20, Ψυχικό, Αττική</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-cream/10 rounded-full flex items-center justify-center flex-shrink-0 text-mustard">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Τηλέφωνο</h4>
+                                <a href="tel:+306931575157" class="text-cream/70 hover:text-mustard transition-colors text-xl tracking-wide">693 157 5157</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-cream/10 rounded-full flex items-center justify-center flex-shrink-0 text-mustard">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Ωράριο</h4>
+                                <p class="text-cream/70 greek-caps">ΔΕΥΤΕΡΑ - ΣΑΒΒΑΤΟ</p>
+                                <p class="text-cream/50 text-sm">ΚΑΤΟΠΙΝ ΡΑΝΤΕΒΟΥ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 pt-4">
+                        <a href="https://www.instagram.com/lamprini.polymeropoulou_psy/" target="_blank" class="w-12 h-12 border border-cream/20 rounded-full flex items-center justify-center hover:bg-mustard hover:border-mustard hover:text-navy transition-all">
+                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/instagram-logo-instagram-icon-transparent-free-png.png.webp" class="w-6 h-6 object-contain" alt="Instagram">
+                        </a>
+                        <a href="https://www.doctoranytime.gr/d/Psychologos/polymeropoulou-lamprini" target="_blank" class="w-12 h-12 border border-cream/20 rounded-full flex items-center justify-center hover:bg-mustard hover:border-mustard hover:text-navy transition-all p-2">
+                             <img src="https://www.doctoranytime.gr/images/logo-rebranding.svg" class="w-full h-full brightness-0 invert">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-cream rounded-3xl p-2 overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.208182749453!2d23.774987376518884!3d38.01899137192461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1986422709e99%3A0x6331828833959149!2sNikolakopoulou%2020%2C%20Neo%20Psichiko%20154%2051!5e0!3m2!1sen!2sgr!4v1709234567890!5m2!1sen!2sgr" width="100%" height="400" style="border:0; border-radius: 1.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="border-t border-cream/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-cream/40">
+                <p>© 2026 Λαμπρινή Πολυμεροπούλου. All rights reserved.</p>
+                <p class="mt-2 md:mt-0 flex items-center gap-1">
+                    Designed by <a href="https://advonmedia.com" class="text-mustard hover:underline">Advon Media</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-navy/95 backdrop-blur-xl hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-cream hover:text-mustard">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl transform scale-95 transition-transform duration-300">
+    </div>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Loading Screen Logic
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.classList.add('opacity-0');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 700);
+        });
+
+        // Sticky Navbar Logic
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-cream/90', 'backdrop-blur-md', 'shadow-sm', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('bg-cream/90', 'backdrop-blur-md', 'shadow-sm', 'py-2');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        mobileMenuClose.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Lightbox Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        window.openLightbox = (src) => {
+            lightboxImg.src = src;
+            lightbox.classList.remove('hidden');
+            document.body.classList.add('lightbox-open');
+            // Small delay to allow display:block to apply before opacity transition
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+            }, 10);
+        };
+
+        window.closeLightbox = () => {
+            lightbox.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                document.body.classList.remove('lightbox-open');
+                lightboxImg.src = '';
+            }, 300);
+        };
+
+        // Carousel Scroll Logic
+        const scrollContainer = document.getElementById('reviewScroll');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+
+        nextBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
